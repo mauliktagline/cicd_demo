@@ -7,7 +7,7 @@
     return res.send("Hello World");
  });
 
-app.get('/data",(req,res)=>{
+app.get("/data",(req,res)=>{
   return res.json({msg:'it is okay'});
   })
 

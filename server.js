@@ -12,10 +12,10 @@ app.get("/data",(req,res)=>{
   })
 
 app.get("/user",(req,res)=>{
-  return res.json({user:{
+  return res.json({
     name:"Maulik",
     desg:"Backend Engineer" 
-  }});
+  });
  })
 
  app.listen(port, () => console.log(`Server running on port ${port} 🔥`));

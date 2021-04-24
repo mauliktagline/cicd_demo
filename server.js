@@ -11,6 +11,13 @@ app.get("/data",(req,res)=>{
   return res.json({msg:'it is okay'});
   })
 
+app.get("/user",(req,res)=>{
+  return res.json({user:{
+    name:"Maulik",
+    desg:"Backend Engineer" 
+  });
+ })
+
  app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
 
 module.exports=app;

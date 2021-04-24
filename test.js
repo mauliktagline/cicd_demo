@@ -8,6 +8,7 @@
      
      it("respond message ", (done) => {
         request(app).get("/data").expect({msg:"it is okay"}, done);
+        request(app).get("/data").expect({msg:"it is not okay"}, done);
       })
     });
 

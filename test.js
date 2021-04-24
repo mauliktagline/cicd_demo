@@ -12,7 +12,7 @@
      
      it('Get user details', (done) => {
       const expectedResponse={
-           name:"Maulik Bhalala",
+           name:"Maulik",
            desg:"Backend Engineer"
          };
       

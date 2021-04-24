@@ -11,16 +11,15 @@
       })
      
      it('Get user details', (done) => {
-        request(app)
-        .get('/user/')
-        .end((err, res) => {
-         const expectedResponse={
+      const expectedResponse={
            name:"Maulik Bhalala",
            desg:"Backend Engineer"
          };
-            expect(res.body.user).toEqual(expectedResponse)
-            done();
-        })
-    })
+      
+        request(app)
+        .get('/user/')
+        .expect(expectedResponse,done);
+    });
+
     });
 

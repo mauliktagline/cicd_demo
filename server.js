@@ -15,7 +15,7 @@ app.get("/user",(req,res)=>{
   return res.json({user:{
     name:"Maulik",
     desg:"Backend Engineer" 
-  });
+  }});
  })
 
  app.listen(port, () => console.log(`Server running on port ${port} 🔥`));

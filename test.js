@@ -24,7 +24,7 @@
      it('Sum should be equal', (done) => {
         const {a,b}={10,15};
         request(app)
-        .put('/user/1')
+        .post('/sum')
         .send({a,b})
         .expect(res.body).toEqual(a+b,done);
     })

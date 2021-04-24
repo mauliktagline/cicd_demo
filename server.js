@@ -7,6 +7,10 @@
     return res.send("Hello World");
  });
 
+app.get('/data",(req,res)=>{
+  return res.json({msg:'it is okay'});
+  })
+
  app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
 
 module.exports=app;

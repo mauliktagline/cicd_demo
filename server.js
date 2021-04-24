@@ -18,6 +18,10 @@ app.get("/user",(req,res)=>{
   });
  })
 
+app.post("/sum",(req,res)=>{
+  const {a,b}=req.body;
+  return res.json({sum:a+b});
+});
  app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
 
 module.exports=app;
